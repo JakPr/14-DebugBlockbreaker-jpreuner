@@ -24,7 +24,7 @@ public class Block : MonoBehaviour {
     private void Start()
     {
         CountBreakableBlocks();
-        gameStatus = FindObjectOfType<GameSession>();
+        gameStatus = FindObjectOfType <GameSession>();
 
     }
 
@@ -90,7 +90,7 @@ public class Block : MonoBehaviour {
 
     private void TriggerSparkleVFX()
     {
-        GameObject sparkles = Instantiate(blockSparklesVFX, transform.position.x, transform.rotation);
+        GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
         Destroy(sparkles, 1f);
     }
 }
